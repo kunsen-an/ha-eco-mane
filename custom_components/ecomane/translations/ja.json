@@ -1,0 +1,114 @@
+{
+  "title": "ECOマネHEMS",
+  "config": {
+    "abort": {
+      "already_configured": "デバイスはすでに設定済み"
+    },
+    "error": {
+      "cannot_connect": "接続に失敗",
+      "invalid_auth": "無効な認証",
+      "unknown": "予期していないエラー"
+    },
+    "step": {
+      "user": {
+        "title": "ECOマネの設定",
+        "description": "統合の設定に必要な以下の情報を設定してください.",
+        "data": {
+          "name": "名称",
+          "ip": "IPアドレス"
+        },
+        "data_description": {
+          "name": "名称を指定してください.",
+          "ip": "測定値を取得するIPアドレスを指定していください."
+        }
+      },
+      "confirm": {
+        "description": "{name}を設定しますか?"
+      }
+    }
+  },
+  "device": {
+    "daily_usage": {
+      "name": "今日の使用量"
+    },
+    "power_consumption": {
+      "name": "消費電力"
+    },
+    "energy_consumption": {
+      "name": "今日の消費電力量"
+    }
+  },
+  "entity": {
+    "sensor": {
+      "electricity_purchased": {
+        "name": "購入電気量",
+        "state": "{value} kWh",
+        "attributes": {
+          "unit_of_measurement": "kWh",
+          "translation_placeholders": {
+            "value": {
+              "description": "エネルギー消費量"
+            }
+          }
+        }
+      },
+      "solar_power_energy": {
+        "name": "太陽光発電量"
+      },
+      "gas_consumption": {
+        "name": "ガス消費量"
+      },
+      "water_consumption": {
+        "name": "水消費量"
+      },
+      "co2_emissions": {
+        "name": "CO2排出量",
+        "state": "{value} kg",
+        "attributes": {
+          "unit_of_measurement": "kg",
+          "translation_placeholders": {
+            "value": {
+              "description": "CO2量"
+            }
+          }
+        }
+      },
+      "co2_reduction": {
+        "name": "CO2削減量"
+      },
+      "electricity_sales": {
+        "name": "売電量"
+      },
+      "solar_panel": {
+        "name": "太陽光パネル"
+      },
+      "kitchen_lighting_and_outlets": {
+        "name": "キッチン 照明＆コンセント"
+      },
+      "kitchen_dishwasher": {
+        "name": "キッチン 食器洗い乾燥機"
+      },
+      "kitchen_lower_outlets": {
+        "name": "キッチン（下） コンセント"
+      },
+      "kitchen_upper_outlets": {
+        "name": "キッチン（上） コンセント"
+      },
+      "shower_lighting_and_outlets": {
+        "name": "シャワー洗面納戸 照明＆コンセント"
+      },
+      "dining_air_conditioner": {
+        "name": "ダイニング エアコン"
+      },
+      "dining_lighting_and_outlets": {
+        "name": "ダイニング 照明＆コンセント"
+      },
+      "dining_south_lighting_and_outlets": {
+        "name": "ダイニング（南） 照明＆コンセント"
+      },
+      "dining_north_outlets": {
+        "name": "ダイニング（北） コンセント"
+      }
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "title": "ECO Mane HEMS Integration",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Configure Eco Mane HEMS",
+        "description": "Please fill out the following information to set up the integration.",
+        "data": {
+          "name": "Name",
+          "ip": "IP"
+        },
+        "data_description": {
+          "name": "Enter a unique name for this integration instance.",
+          "ip": "Provide the IP address to fetch data from."
+        }
+      },
+      "confirm": {
+        "description": "Do you want to set up {name}?"
+      }
+    },
+    "error": {
+      "cannot_connect": "[%key:common::config_flow::error::cannot_connect%]",
+      "invalid_auth": "[%key:common::config_flow::error::invalid_auth%]",
+      "unknown": "[%key:common::config_flow::error::unknown%]"
+    },
+    "abort": {
+      "already_configured": "[%key:common::config_flow::abort::already_configured_device%]"
+    }
+  },
+  "device": {
+    "daily_usage": {
+      "name": "Today's Usage"
+    },
+    "power_consumption": {
+      "name": "Electric Power Consumption"
+    },
+    "energy_consumption": {
+      "name": "Today's Electric Energy Consumption"
+    }
+  },
+  "entity": {
+    "sensor": {
+      "electricity_purchased": {
+        "name": "Eletricity Purchased"
+      },
+      "solar_power_energy": {
+        "name": "Solar Power Energy"
+      },
+      "gas_consumption": {
+        "name": "Gas Consumption"
+      },
+      "water_consumpotion": {
+        "name": "Water Consumption"
+      },
+      "co2_emissions": {
+        "name": "CO2 Emissions"
+      },
+      "co2_reduction": {
+        "name": "CO2 Reduction"
+      },
+      "electricity_sales": {
+        "name": "Electricity Sales"
+      },
+      "solar_panel": {
+        "name": "Solar Panel"
+      },
+      "kitchen_lighting_and_outlets": {
+        "name": "Kitchen Lighting & Outlets"
+      },
+      "kitchen_dishwasher": {
+        "name": "Kitchen Dishwasher"
+      },
+      "kitchen_lower_outlets": {
+        "name": "Kitchen (Lower) Outlets"
+      },
+      "kitchen_upper_outlets": {
+        "name": "Kitchen (Upper) Outlets"
+      },
+      "dining_air_conditioner": {
+        "name": "Dining Air Conditioner"
+      },
+      "dining_lighting_and_outlets": {
+        "name": "Dining Lighting & Outlets"
+      },
+      "dining_south_lighting_and_outlets": {
+        "name": "Dining South Lighting & Outlets"
+      },
+      "dining_north_outlets": {
+        "name": "Dining North Outlets"
+      }
+    }
+  }
+}
